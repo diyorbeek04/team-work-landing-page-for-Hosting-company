@@ -31,3 +31,310 @@ img {
     margin: 0 auto;
     padding: 0 10px;
 }
+
+@font-face {
+    font-family: 'poppins semibold';
+    src: url(./fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+/* *-*-*-* HEADER *-*-*-* */
+#header{
+    width: 100%;
+    padding: 20px;
+}
+#header .navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#header .navbar .header__navbar--logo{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .navbar .header__navbar--logo img{
+    width: 91px;
+    height: 60px;
+}
+#header .navbar .header__navbar--logo .header__navbar--logo--text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+#header .navbar .header__navbar--logo .header__navbar--logo--text h1{
+    color: #000;
+    font-size: 15px;
+    font-family: 'poppins semibold';
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+#header .navbar .header__navbar--logo .header__navbar--logo--text .clr__underline{
+    width: 72px;
+    height: 2px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #B00000;
+    margin-left: 85px;
+}
+#header ul{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+}
+#header ul li{
+    list-style: none;
+}
+#header ul li a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'poppins semibold';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+#header .header__contact{
+    width: 30%;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .header__contact h1{
+    color: #000;
+    font-family: 'poppins semibold';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+#header .header__contact .header__clr{
+    width: 1px;
+    height: 19px;
+    flex-shrink: 0;
+    background: #DAD8D8;
+}
+#header .header__contact .header__contact--phone--number{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#header .header__contact .header__contact--phone--number i{
+    color: #B00000;
+    font-size: 16px;
+}
+#header .header__contact .header__contact--phone--number h1{
+    color: #000;
+    font-family: 'poppins semibold';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px; /* 93.75% */
+}
+
+/* *-*-*-* HERO *-*-*-* */
+#hero{
+    width: 100%;
+    padding-top: 30px;
+}
+#hero .hero__content{
+    width: 100%;
+    height: 521px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+#hero .hero__content .hero__text{
+    width: 50%;
+}
+#hero .hero__content .hero__text .hero__text--contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+#hero .hero__content .hero__text .hero__text--contact ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+#hero .hero__content .hero__text .hero__text--contact ul li a{
+    color: rgba(214, 212, 212, 0.88);
+    font-family: 'poppins semibold';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+#hero .hero__content .hero__text .hero__text--contact ul li .current{
+    font-family: 'poppins semibold';
+    color: #B00000;
+    font-family: 'poppins semibold';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+#hero .hero__content .hero__text .hero__text--contact .hero__text--contact--clr{
+    width: 242px;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: #E5E5E5;
+}
+#hero .hero__content .hero__text .hero__text--contact .hero__text--contact--clr .red{
+    width: 23%;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: #B00000;
+}
+#hero .hero__content .hero__text h1{
+    color: var(--text-title, #2E2E2E);
+    font-family: 'poppins semibold';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 77.5px;
+    padding-top: 26px;
+}
+#hero .hero__content .hero__text p{
+    width: 448px;
+    padding-top: 34px;
+    font-family: sans-serif;
+    color: var(--text-body, #808080);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    letter-spacing: 0.8px;
+}
+#hero .hero__content .hero__contact--btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 60px;
+    gap: 24px;
+}
+#hero .hero__content .hero__contact--btn button{
+    width: 160px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid var(--base-black, #000);
+}
+#hero .hero__content .hero__contact--btn .red{
+    width: 160px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #B00000;
+    box-shadow: 0px 0px 64px 0px rgba(176, 0, 0, 0.30);
+}
+#hero .hero__image{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero .hero__image img{
+    width: 501px;
+    height: 504px;
+}
+/* *-*-*-* Why US *-*-*-* */
+#whyUs{
+    width: 100%;
+}
+#whyUs .whyUs__text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#whyUs .whyUs__text .whyUs__text--head{
+    width: 50%;
+    display: block;
+}
+#whyUs .whyUs__text .whyUs__text--head h1{
+    color: var(--text-gray-900, #18191F);
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+}
+#whyUs .whyUs__text .whyUs__text--head p{
+    color: var(--text-gray-900, #18191F);
+    font-feature-settings: 'salt' on, 'liga' off;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+#whyUs .whyUs__text .whyUs__text--image{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#whyUs .whyUs__text .whyUs__text--image img{
+    width: 27%;
+}    
+#whyUs .whyUs__content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 5%;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+#whyUs .whyUs__content .whyUs__content--blog{
+    width: 25%;
+}
+#whyUs .whyUs__content .whyUs__content--blog img{
+    width: 25%;
+    margin-left: 36%;
+}
+#whyUs .whyUs__content .whyUs__content--blog h1{
+    color: #000;
+    font-family: 'poppins semibold';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+#whyUs .whyUs__content .whyUs__content--blog p{
+    color: #000;
+    text-align: center;
+    font-family: 'poppins semibold';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
